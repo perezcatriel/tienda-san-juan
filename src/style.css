@@ -52,11 +52,21 @@ li {
 }
 
 .imagen-principal {
-	background-color: gray;
+	background-image: url(../assets/nike-negra.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
 	width: 800px;
 	height: 500px;
 	margin: 50px auto;
 	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: space-between;
+	justify-content: center;
+}
+
+.img-principal {
+	z-index: -10;
 }
 
 aside {
@@ -76,6 +86,34 @@ aside {
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
+}
+
+.foto-articulo {
+	width: 380px;
+	height: 200px;
+	border-radius: 10px;
+	
+}
+
+.slogan {
+	/* position: absolute;
+	top: 30%;
+	left: 30%; */
+	font-size: 35px;
+	color: white;
+	text-shadow: 0 0 5px black;
+	font-weight: bold;
+	text-align: center;
+}
+
+.coleccion {
+	/* position: absolute;
+	top: 400px;
+	left: 38%; */
+	padding: 20px 100px;
+	border-radius: 10px;
+	width: 80%;
+	margin: 20px auto 0;
 }
 
 .imagen-descripcion {
