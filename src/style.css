@@ -1,0 +1,133 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-decoration: none;
+	font-family: Ubuntu;
+}
+
+:root {
+	--rojo: red;
+}
+
+header {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.login-shop {
+	display: flex;
+	align-items: center;
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+}
+
+ul {
+	display: flex;
+	border-bottom: 1px solid black;
+}
+
+li {
+	text-decoration: none;
+	margin: 10px;
+}
+
+.login {
+	position: absolute;
+	top: 0;
+	right: 20px;
+	background-color: gray;
+	border: 1px solid black;
+	width: 400px;
+	height: 300px;
+	margin: 50px auto;
+	padding: 20px;
+	border-radius: 10px;
+	text-align: center;
+	display: none;
+}
+
+.imagen-principal {
+	background-color: gray;
+	width: 800px;
+	height: 500px;
+	margin: 50px auto;
+	border-radius: 10px;
+}
+
+aside {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+
+.art {
+	background-color: gray;
+	width: 400px;
+	height: 300px;
+	margin: 30px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.imagen-descripcion {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.imagen-descripcion img {
+	margin-left: 180px;
+}
+
+.carrito {
+	background-color: gray;
+	width: 600px;
+	height: 400px;
+	border-radius: 10px;
+	margin: auto;
+	padding: 20px;
+	position: relative;
+	text-align: center;
+}
+
+.articulos {
+	border-top: 1px solid black;
+	border-bottom: none;
+	display: flex;
+	flex-direction: column;
+}
+
+.articuloCompra {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.articuloCompra img {
+	width: 20px;
+}
+
+.resultado {
+	position: absolute;
+	top: 350px;
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	font-size: 20px
+}
+
+footer {
+	display: flex;
+	justify-content: space-around;
+	padding: 50px;
+}
