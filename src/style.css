@@ -55,6 +55,7 @@ li {
 	background-image: url(../assets/nike-negra.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
+	box-shadow: 0 0 10px black;
 	width: 800px;
 	height: 500px;
 	margin: 50px auto;
@@ -78,6 +79,7 @@ aside {
 
 .art {
 	background-color: gray;
+	box-shadow: 0 0 10px black;
 	width: 400px;
 	height: 300px;
 	margin: 30px;
