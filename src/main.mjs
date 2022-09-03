@@ -16,10 +16,13 @@ function like(id) {
 	if (id !== idRepetido) {
 		showArt(articulo, precio, id);
 		idRepetido = id;
+
 	} else {
 		borrarArt(id);
 	}
 }
+
+function mostrarCantidad() {}
 
 function showArt(articulo, precio, id) {
 	const articulos = document.querySelector(".articulos");
