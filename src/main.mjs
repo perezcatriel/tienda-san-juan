@@ -1,3 +1,12 @@
+function mostrarCarro() {
+	const mostrar = "block";
+	const carrito = document.querySelector(".carrito");
+
+	if (document.querySelector('.inactivo'))
+		carrito.className = " carrito activo";
+	else carrito.className = "carrito inactivo";
+}
+
 let idRepetido;
 
 function like(id) {
@@ -41,12 +50,12 @@ function showArt(articulo, precio, id) {
 	const check = document.createElement("img");
 	check.src = "./assets/comprar.svg";
 
-	const cantidadTotal = document.getElementById('cantidad-total')
-	cantidadTotal.innerText = Number(cantidad)
-	const pagoTotal = document.getElementById('pago-total')
-	pagoTotal.innerText = sumaPrecio(precio, cantidad)
+	const cantidadTotal = document.getElementById("cantidad-total");
+	cantidadTotal.innerText = Number(cantidad);
+	const pagoTotal = document.getElementById("pago-total");
+	pagoTotal.innerText = sumaPrecio(precio, cantidad);
 
-	console.log(cantidadTotal)
+	console.log(cantidadTotal);
 
 	art.append(eliminar);
 	art.append(nombre);
@@ -58,23 +67,22 @@ function showArt(articulo, precio, id) {
 
 	articulos.append(art);
 
-	cantidadProductos(id, precio)
-	totalPagar()
+	cantidadProductos(id, precio);
+	totalPagar();
 }
 
-let precioTotal = 0
-function sumaPrecio (precio, cantidad) {
-console.log(cantidad)
+let precioTotal = 0;
+function sumaPrecio(precio, cantidad) {
+	console.log(cantidad);
 
-	return (precioTotal += Number(precio)).toFixed(2)
+	return (precioTotal += Number(precio)).toFixed(2);
 }
 
 function cantidadProductos(id, precio) {
-	console.log(id, precio)
+	console.log(id, precio);
 }
 
 function totalPagar() {}
-
 
 function borrarArt(id) {
 	const art = document.getElementById(id);

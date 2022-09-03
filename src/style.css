@@ -92,7 +92,6 @@ aside {
 	width: 380px;
 	height: 200px;
 	border-radius: 10px;
-	
 }
 
 .slogan {
@@ -133,8 +132,18 @@ aside {
 	border-radius: 10px;
 	margin: auto;
 	padding: 20px;
-	position: relative;
+	position: fixed;
+	top: 50px;
+	right: 20px;
 	text-align: center;
+}
+
+.activo {
+	display: block;
+}
+
+.inactivo {
+	display: none;
 }
 
 .articulos {
@@ -161,7 +170,7 @@ aside {
 	display: flex;
 	justify-content: space-around;
 	width: 100%;
-	font-size: 20px
+	font-size: 20px;
 }
 
 footer {
